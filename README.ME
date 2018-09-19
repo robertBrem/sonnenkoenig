@@ -7,3 +7,14 @@ Zeige Images: `docker images`
 Zeige Container: `docker ps`
 Entferne Container: `docker rm {ID or NAME}`
 Entferne Image: `docker mi {ID or NAME:TAG}`
+
+
+Kubernetesbefehle:
+Kubectl Befehl: `kubectl --kubeconfig admin.conf`
+Alias:
+```
+alias kc='kubectl --kubeconfig /home/vagrant/Schreibtisch/admin.conf'
+alias wkc='watch kubectl --kubeconfig /home/vagrant/Schreibtisch/admin.conf'
+```
+Wende Änderungen an: `kc apply -f deployment.yml`
+Lösche Konfiguration: `kc delete -f deployment.yml`
